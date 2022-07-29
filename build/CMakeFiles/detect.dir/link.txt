@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdetect.a  CMakeFiles/detect.dir/lib/ED.cpp.o CMakeFiles/detect.dir/lib/EDCircles.cpp.o CMakeFiles/detect.dir/lib/EDColor.cpp.o CMakeFiles/detect.dir/lib/EDLines.cpp.o CMakeFiles/detect.dir/lib/EDPF.cpp.o CMakeFiles/detect.dir/lib/NFA.cpp.o
+/usr/bin/ranlib libdetect.a

@@ -1,0 +1,8 @@
+prefix=/home/boyheaven/Vscode/work/serialPort/src/serialPort/build/devel
+
+Name: serialPort
+Description: Description of serialPort
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
