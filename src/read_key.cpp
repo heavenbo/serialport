@@ -15,9 +15,9 @@ int main(int argv, char **argc)
 
     cv::VideoCapture cap;
     YAML::Node point_yaml = YAML::LoadFile(yaml_path);
-    ros::init(argv, argc, "fir");
-    ros::NodeHandle n;
-    ros::Rate rate(20);
+//     ros::init(argv, argc, "fir");
+//     ros::NodeHandle n;
+//     ros::Rate rate(20);
     serial::Serial ser;
     identify::color a = identify::nocolor;
     identify::shape b = identify::none;
@@ -48,7 +48,10 @@ int main(int argv, char **argc)
     int state = 2;
     int nopoint = 0;
     int i = 0;
-    while (ros::ok())
+    buffer_read[0]=3;
+    ser.write(buffer_read,1);
+    buffer_read[0]=0;
+    while (1)
     {
         int n = ser.read(buffer_read, 1);
         if (buffer_read[0] == 100)
